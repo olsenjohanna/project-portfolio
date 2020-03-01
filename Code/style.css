@@ -39,11 +39,11 @@ header {
   padding-left: 40px;
 }
 
-.portfolio h5 {
+.portfolio h3 {
   font: 400 13px/15px Roboto;
 }
 
-.portfolio h5 span {
+.portfolio h3 span {
   font: Bold 13px/15px Roboto;
   color: #fcf8e8;
 }
@@ -53,7 +53,7 @@ header {
   font: Bold 40px/49px Montserrat;
 }
 
-.portfolio h4 {
+.portfolio h2 {
   font: Bold 24px/29px Montserrat;
   color: #fcf8e8;
 }
@@ -101,7 +101,7 @@ span.wave {
   text-align: center;
 }
 
-h2 {
+h4 {
   background-color: #df7861;
   color: white;
   width: fit-content;
@@ -114,12 +114,12 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 align-content: center;
+padding: 20px;
 }
 
 article {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   width: 70%;
 }
@@ -139,3 +139,100 @@ article:hover {
   color: #df7861;
 }
 
+.other-projecs-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.other-projecs-container h3 {
+  font: Bold 21px/25px Montserrat;
+  color: #df7861;
+  margin: 10px;
+}
+
+.thoughts {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  padding: 20px;
+}
+
+.my-thoughts {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ padding: 10px;
+}
+
+.more-thoughts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+ }
+
+ .skills {
+   background-color: #fcf8e8;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   padding: 20px;
+   text-align: center;
+ }
+
+ .skills h4 {
+   width: 100%;
+ }
+
+ .skills-code {
+   width: 40%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-bottom: 20px;
+ }
+
+ .skills-toolbox {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.skills-upcoming {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skills-more {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.for-more {
+  background-color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.for-more i {
+  margin-left: 8px;
+  border: 3px solid #df7861;
+  border-radius: 50%;
+  padding: 10px;
+  color: #df7861;
+}
+
+footer {
+  background-color: #df7861;
+  text-align: center;
+  padding: 20px;
+}
