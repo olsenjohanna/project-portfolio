@@ -47,7 +47,7 @@ header {
 
 .portfolio h1 {
   font: Bold 40px/49px Montserrat;
-  color: #fcf8e8;
+  color: white;
   line-height: 90%;
 }
 
@@ -78,6 +78,8 @@ header {
   width: 162px;
   border-radius: 50%;
   border: 4px solid #df7861;
+  object-fit: cover;
+
 }
 
 /* section styling */
@@ -202,7 +204,7 @@ article:hover {
 
 
 
-/* Thoughts section */
+/* styling for thoughts section */
 
 .my-thoughts {
   display: flex;
@@ -210,6 +212,10 @@ article:hover {
   text-align: start;
   width: 100%;
   margin: 0;
+}
+
+.heading-thoughts-desktop {
+  display: none;
 }
 
 .my-thoughts a {
@@ -340,6 +346,30 @@ footer a {
   width: 70%;
 }
 
+/* styling for thoughts section */
+
+.heading-thoughts-mobile {
+  display: none;
+}
+
+.heading-thoughts-desktop {
+  display: inline;
+}
+
+/* styling for thoughts section */
+
+.my-thoughts img {
+  object-fit: cover;
+  height: 200px;
+}
+
+/* For more section */
+
+.for-more {
+  justify-content: space-around;
+}
+
+
 
 /* end of media qry tag for tablet */
 }
@@ -400,13 +430,6 @@ padding-right: 300px;
   padding-top: 70px;
 }
 
-/* For more section */
-
-.for-more {
-  justify-content: space-around;
-}
-
-
 /* styling for project container */
 
 .project-container {
@@ -414,6 +437,7 @@ padding-right: 300px;
   flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 50px;
+  width: 100%;
 }
 
 .project-container article {
@@ -432,6 +456,29 @@ padding-right: 300px;
   flex-direction: column;
   justify-content: flex-start;
 }
+
+/* styling for thoughts section */
+
+.my-thoughts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+}
+
+.my-thoughts article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.my-thoughts img {
+  height: 500px;
+}
+
 
  /* Skills section */
  
