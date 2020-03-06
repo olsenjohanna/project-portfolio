@@ -1,12 +1,9 @@
-* {
-  margin: 0;
-}
-
 body {
-  background-color: #fcf8e8;
   font: 400 17px/29px Montserrat;
   margin: 0;
 }
+
+/* header styling */
 
 header {
   background-image: url(Assets/photo-1476480862126-209bfaa8edc8.jpg);
@@ -16,15 +13,16 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 100px;
 }
 
 .social-media {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  width: 90%;
   font-size: 25px;
-  padding-top: 100px;
 }
 
 .social-media i {
@@ -34,26 +32,36 @@ header {
   padding: 10px;
 }
 
-.portfolio {
-  width: 100%;
-  padding-left: 40px;
+.social-media a {
+  text-decoration: none;
+  color: white;
 }
 
-.portfolio h3 {
+.social-media a:hover {
+  color: #df7861;
+}
+
+
+
+/* text in header */
+
+.portfolio h1 {
+  font: Bold 40px/49px Montserrat;
+  color: #fcf8e8;
+  line-height: 90%;
+}
+
+
+.portfolio-name {
   font: 400 13px/15px Roboto;
 }
 
-.portfolio h3 span {
+.portfolio-first-last-name {
   font: Bold 13px/15px Roboto;
   color: #fcf8e8;
 }
 
-
-.portfolio h1 {
-  font: Bold 40px/49px Montserrat;
-}
-
-.portfolio h2 {
+.portfolio-background-topic {
   font: Bold 24px/29px Montserrat;
   color: #fcf8e8;
 }
@@ -62,7 +70,6 @@ header {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  width: 90%;
   margin-bottom: -50px;
 }
 
@@ -70,8 +77,65 @@ header {
   height: 162px;
   width: 162px;
   border-radius: 50%;
-  border: 2px solid #df7861;
+  border: 4px solid #df7861;
 }
+
+/* section styling */
+
+.color-section {
+  background-color: #fcf8e8;
+  padding: 40px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.color-section a {
+  text-decoration: none;
+  color: black;
+}
+
+.white-section {
+  background-color: white;
+  padding: 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* h2 is used as main heading for each section */
+
+.section-header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.section-header h2 {
+  background-color: #df7861;
+  color: white;
+  font: 700 25px Montserrat;
+  width: fit-content;
+  padding: 5px;
+  align-self: center;
+  margin-bottom: 25px;
+}
+
+/* h3 is used as second heading in the sections */
+
+h3 {
+  color: #df7861;
+  font-size: 20px;
+  font-weight: 900;
+  text-align: center;
+}
+
+
+
+
+/* styling for first section (introduction) */
 
 span.wave {
   animation-name: wave-animation;    /* Refers to the name of your @keyframes element below */
@@ -91,37 +155,12 @@ span.wave {
   100% { transform: rotate(  0.0deg) }
 }
 
-.introduction {
-  padding: 60px;
-}
 
-.tech-knowledge {
-  background-color: white;
-  padding: 60px;
-  text-align: center;
-}
-
-h4 {
-  background-color: #df7861;
-  color: white;
-  width: fit-content;
-  padding: 3px;
-}
+/* styling for project container */
 
 .project-container {
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-align-content: center;
-padding: 20px;
-}
-
-article {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  width: 70%;
 }
 
 article img {
@@ -139,100 +178,287 @@ article:hover {
   color: #df7861;
 }
 
-.other-projecs-container {
+.hashtags {
+ display: flex;
+ flex-direction: row;
+ margin-bottom: 20px;
+ align-items: flex-start;
+ width: 100%;
+}
+
+.hashtag {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  margin: 2px;
+  background-color: lightpink;
+  height: fit-content;
+  font-size: 8px;
+  height: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  
 }
 
-.other-projecs-container h3 {
-  font: Bold 21px/25px Montserrat;
-  color: #df7861;
-  margin: 10px;
-}
 
-.thoughts {
-  background-color: white;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  padding: 20px;
-}
+
+/* Thoughts section */
 
 .my-thoughts {
- display: flex;
- flex-direction: column;
- align-items: center;
- padding: 10px;
-}
-
-.more-thoughts {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding: 10px;
+  text-align: start;
+  width: 100%;
+  margin: 0;
+}
+
+.my-thoughts a {
+  text-decoration: none;
+  color: black;
+}
+
+
+.my-thoughts h4 {
+  margin-bottom: 0;
+  font-size: 18px;
+  font-weight: 900;
+  font-size: 20px;
+}
+
+.my-thoughts p {
+  margin-top: 0;
+}
+
+.date {
+  color: #df7861;
+}
+
+
+
+ /* Skills section */
+
+ .skills-heading {
+   color: #df7861;
+   font: Bold 15px;
+   margin-bottom: 0;
  }
 
  .skills {
-   background-color: #fcf8e8;
-   display: flex;
-   flex-direction: row;
-   flex-wrap: wrap;
-   justify-content: space-between;
-   padding: 20px;
-   text-align: center;
- }
-
- .skills h4 {
-   width: 100%;
- }
-
- .skills-code {
    width: 40%;
    display: flex;
    flex-direction: column;
-   align-items: center;
    margin-bottom: 20px;
+   text-align: center;
  }
 
- .skills-toolbox {
-  width: 40%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
-.skills-upcoming {
-  width: 40%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.skills-more {
-  width: 40%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+ /* For more section */
 
 .for-more {
   background-color: white;
   text-align: center;
-  padding: 20px;
+  padding: 20px; 
+  color: #df7861;
+  font-size: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .for-more i {
+  font-size: 40px;
+  width: 50px;
+  height: 50px;
   margin-left: 8px;
   border: 3px solid #df7861;
   border-radius: 50%;
-  padding: 10px;
+  padding: 15px;
   color: #df7861;
 }
+
+.for-more a {
+  text-decoration: none;
+  color: #df7861;
+}
+
+.for-more a:hover {
+ opacity: 0.7;
+}
+
+/* Footer with contact information */
 
 footer {
   background-color: #df7861;
   text-align: center;
   padding: 20px;
 }
+
+footer h2 {
+  font-size: 20px;
+  font-weight: 900;
+  margin-bottom: 5px;
+}
+
+footer p {
+  font-weight: 900;
+  margin-bottom: 0;
+}
+
+footer a {
+  color: black;
+}
+
+
+/* MEDIA QUERIES TABLET */
+
+@media (min-width: 667px) { 
+
+  header {
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 100px;
+  }
+
+  /* section styling */
+
+.color-section {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.white-section {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.section-header h2 {
+  margin-bottom: 40px;
+ }
+
+
+/* styling for project container */
+.project-container {
+  width: 70%;
+}
+
+
+/* end of media qry tag for tablet */
+}
+
+
+/* MEDIA QUERIES DESKTOP */
+
+@media (min-width: 1024px) {
+
+header {
+    padding-left: 300px;
+    padding-right: 300px;
+    padding-top: 100px;
+  }
+
+  /* text in header */
+
+.portfolio-name {
+  font: 400 20px Roboto;
+}
+
+.portfolio-first-last-name {
+  font: Bold 20px Roboto;
+}
+
+.portfolio-topic {
+  font: Bold 50px;
+}
+
+.portfolio-background-topic {
+  font: Bold 30px Montserrat;
+}
+
+.photo img {
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  border: 2px solid #df7861;
+}
+
+/* section styling */
+
+.color-section {
+  padding-left: 300px;
+  padding-right: 300px;
+}
+
+.white-section {
+padding-left: 300px;
+padding-right: 300px;
+}
+
+.section-header h2 {
+ margin-bottom: 50px;
+}
+
+.wave {
+  padding-top: 70px;
+}
+
+/* For more section */
+
+.for-more {
+  justify-content: space-around;
+}
+
+
+/* styling for project container */
+
+.project-container {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.project-container article {
+  width: 45%;
+}
+
+.other-projecs-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  width: 100%;
+}
+
+.other-projecs-container article {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+ /* Skills section */
+ 
+ .skills {
+  width: 25%;
+}
+
+/* For more section */
+
+.for-more {
+  justify-content: center;
+}
+
+.for-more i {
+  font-size: 50px;
+  width: 60px;
+  height: 60px;
+  margin-left: 25px;
+  margin-right: 25px;
+  padding: 20px;
+}
+
+.for-more p {
+  margin-left: 25px;
+  margin-right: 25px;
+  font-size: 11px;
+}
+
+  /* end of media qry tag for desktop */
+ }
